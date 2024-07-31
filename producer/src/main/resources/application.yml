@@ -1,0 +1,28 @@
+server:
+  port: 8083
+spring:
+  application:
+    name: producer
+  datasource:
+    password: password
+    url: jdbc:postgresql://localhost:5432/rabbit_mq_db
+    username: postgres
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        format_sql: true
+    show-sql: true
+  rabbitmq:
+    addresses: localhost:5672
+  profiles:
+    active: default
+    username: guest
+    password: guest
+    virtual-host: /
+  logging:
+    level:
+      org.springframework.amqp.rabbit: INFO
+      com.producer: INFO

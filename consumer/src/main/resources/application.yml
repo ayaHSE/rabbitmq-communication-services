@@ -1,0 +1,31 @@
+server:
+  port: 8082
+spring:
+  application:
+    name: consumer
+  datasource:
+    password: password
+    url: jdbc:postgresql://localhost:5432/rabbit_mq_db
+    username: postgres
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        format_sql: true
+    show-sql: true
+  rabbitmq:
+    addresses: localhost:5672
+  profiles:
+    active: default
+    username: guest
+    password: guest
+    virtual-host: /
+rabbitmq:
+  exchanges:
+    internal: internal.exchange
+  queues:
+    consumer: consumer.queue
+  routing-keys:
+    internal-consumer: internal.consumer.routing-key
