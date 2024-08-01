@@ -8,14 +8,14 @@ This project consists of two Spring Boot applications, `Producer` and `Consumer`
 
 This project uses the following technologies:
 
-- **Java 22** - Latest long-term supported version.
-- **Spring Boot 3.3.2** - Framework for building Java applications.
-- **Lombok** - Library for reducing boilerplate code (constructors, getters, setters, etc.).
-- **RabbitMQ** - Messaging broker for communication between services.
-- **PostgreSQL** - Database for storing messages.
-- **Maven** - Build tool for managing project dependencies and builds.
-- **Docker** - Containerization tool for running the PostgreSQL database.
-- **PgAdmin** - Tool for managing PostgreSQL databases.
+- **Java 22** 
+- **Spring Boot 3.3.2** 
+- **Lombok** 
+- **RabbitMQ** 
+- **PostgreSQL** 
+- **Maven** 
+- **Docker** 
+- **PgAdmin** 
 
 ### Setup and Configuration
 
