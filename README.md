@@ -2,7 +2,7 @@
 
 ### Introduction
 
-This project consists of two Spring Boot applications, `ProducerService` and `ConsumerService`, that use RabbitMQ for inter-process communication. The `ProducerService` sends messages, and the `ConsumerService` receives and stores them in a PostgreSQL database.
+This project consists of two Spring Boot applications, `Producer` and `Consumer`, that use RabbitMQ for inter-process communication. The `Producer` sends messages, and the `Consumer` receives and stores them in a PostgreSQL database.
 
 ### Technologies
 
@@ -31,8 +31,8 @@ This project uses the following technologies:
 
 #### Running the Applications
 
-- **Start Producer Service**: Navigate to the `producer` directory and run `mvn spring-boot:run`.
-- **Start Consumer Service**: Navigate to the `consumer` directory and run `mvn spring-boot:run`.
+- **Start Producer**: Navigate to the `producer` directory and run `mvn spring-boot:run`.
+- **Start Consumer**: Navigate to the `consumer` directory and run `mvn spring-boot:run`.
 
 ### Testing the API
 
